@@ -27,20 +27,101 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_gender"
         android:text="F"/>
-    <TextView
-        android:id="@+id/tv_age"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_male"
-        android:text="Età:"/>
     <EditText
         android:id="@+id/et_age"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintWidth_percent="0.5"
-        app:layout_constraintTop_toBottomOf="@id/tv_age"
-        android:inputType="number"/>
+        app:layout_constraintTop_toBottomOf="@id/btn_male"
+        android:inputType="number"
+        android:hint="Età"/>
+    <TextView
+        android:id="@+id/tv_pliche"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/et_age"
+        android:text="7 pliche (mm):"/>
+    <EditText
+        android:id="@+id/et_tricipite"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintTop_toBottomOf="@id/tv_pliche"
+        android:inputType="number"
+        android:hint="Tricipite"/>
+    <EditText
+        android:id="@+id/et_addome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintTop_toBottomOf="@id/tv_pliche"
+        app:layout_constraintStart_toEndOf="@+id/et_tricipite"
+        android:inputType="number"
+        android:hint="Addome"/>
+    <EditText
+        android:id="@+id/et_soprailiaca"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintTop_toBottomOf="@id/et_addome"
+        android:inputType="number"
+        android:hint="Soprailiaca"/>
+    <EditText
+        android:id="@+id/et_sottoscapolare"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintTop_toBottomOf="@id/et_addome"
+        android:inputType="number"
+        android:hint="Sottoscapolare"/>
+    <EditText
+        android:id="@+id/et_ascellare"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintTop_toBottomOf="@id/et_soprailiaca"
+        android:inputType="number"
+        android:hint="Ascellare"/>
+    <EditText
+        android:id="@+id/et_pettorale"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintTop_toBottomOf="@id/et_sottoscapolare"
+        android:inputType="number"
+        android:hint="Pettorale"/>
+    <EditText
+        android:id="@+id/et_coscia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintTop_toBottomOf="@id/et_ascellare"
+        android:inputType="number"
+        android:hint="Coscia"/>
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_coscia"
+        android:text="Conferma"
+        android:backgroundTint="@color/green"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
