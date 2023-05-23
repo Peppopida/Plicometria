@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
   private void disabledAllField() {
     etAge.setEnabled(false);
+    btnConfirm.setEnabled(false);
   }
 
   private void buttonsListener() {
